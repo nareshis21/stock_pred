@@ -96,5 +96,5 @@ We welcome feedback and contributions to improve this system. Please raise an is
 
 ---
 
-**Author**: [NARESH KUMAR LAHAJAL]  
+**Author**: NARESH KUMAR LAHAJAL  
 **License**: MIT 

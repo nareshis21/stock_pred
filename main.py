@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello world"
+    return "Stock prediction"
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -22,7 +22,7 @@ def predict():
     volume=float(volume)
     input_query = np.array([[high,low,open,volume]])
     result = model.predict(input_query)[0]
-    return jsonify(str(result))
+    return jsonify({'res':str(result)})
 
 if __name__ == '__main__':
     app.run(debug=True)

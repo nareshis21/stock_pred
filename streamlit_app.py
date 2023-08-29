@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-import json
 
 st.title("Predictive Model App")
 
@@ -29,10 +28,12 @@ if st.button("Predict"):
         # Parse the response and display the result
         if response.status_code == 200:
             result_data = response.json()
-            st.write(result_data.get("res"))
+            
+            # Display the result in a bigger font and inside a text box
+            st.markdown(f"## Result")
+            st.markdown(f"<div style='background-color: ##050505; padding: 20px; border-radius: 5px;'><span style='font-size: 24px;'>{result_data.get('res')}</span></div>", unsafe_allow_html=True)
         else:
             st.error(f"API Error: {response.status_code}. {response.text}")
             
     except Exception as e:
         st.error(f"Error: {e}")
-

@@ -100,7 +100,7 @@ We welcome feedback and contributions to improve this system. Please raise an is
 
 We have successfully developed a web app using Streamlit that provides a user-friendly interface for our Stock Price Prediction System. The web app allows users to easily input their stock data and get predictions in real-time without any technical know-how.
 
-Furthermore, we've hosted our Streamlit app on Hugging Face, allowing for seamless access and scalable user interactions. You can access the Streamlit app [here](https://huggingface.co/spaces/NEXAS/stock) and (https://nexa-stock.streamlit.app).
+Furthermore, we've hosted our Streamlit app on Hugging Face, allowing for seamless access and scalable user interactions. You can access the Streamlit app [here](https://huggingface.co/spaces/NEXAS/stock) .
 
 ---
 
